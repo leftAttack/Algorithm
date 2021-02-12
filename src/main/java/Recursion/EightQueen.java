@@ -19,39 +19,39 @@ public class EightQueen {
     private int count;
 
     //放置第n个皇后
-    public void place(int n){
-        if(n == max){
+    public void place(int n) {
+        if (n == max) {
             print();
             return;
         }
-        for(int i = 0; i < max; i++){
+        for (int i = 0; i < max; i++) {
             arr[n] = i;
-            if(isConflict(n)){
+            if (!isConflict(n)) {
                 place(n + 1);
             }
         }
     }
 
     //判断是否冲突
-    private boolean isConflict(int n){
-       for(int i = 0; i < n; i++){
-           //  判断是否在同一列             判断是否在同一条斜线
-           if(arr[i] == arr[n] || Math.abs(n - i) == Math.abs(arr[n] - arr[i])){
-               return false;
-           }
-       }
-       return true;
+    private boolean isConflict(int n) {
+        for (int i = 0; i < n; i++) {
+            //  判断是否在同一列             判断是否在同一条斜线
+            if (arr[i] == arr[n] || Math.abs(n - i) == Math.abs(arr[n] - arr[i])) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    private void print(){
-        for(int i : arr){
+    private void print() {
+        for (int i : arr) {
             System.out.print(i);
         }
         System.out.println();
-        count ++;
+        count++;
     }
 
-    public int getCount(){
+    public int getCount() {
         return count;
     }
 }
