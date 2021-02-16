@@ -16,6 +16,10 @@ public class AVLTree {
         avlTree.add(new Node(3));
         avlTree.infixOrder();
         System.out.println();
+        System.out.println(avlTree.root.height());
+        System.out.println(avlTree.root.leftHeight());
+        System.out.println(avlTree.root.rightHeight());
+        System.out.println();
         avlTree.root.doubleRevolve();
         System.out.println(avlTree.root.height());
         System.out.println(avlTree.root.leftHeight());

@@ -95,30 +95,28 @@ public class Node {
         //删除只有一颗子树的情况
         else if ((delNode.left == null && delNode.right != null) || (delNode.right == null && delNode.left != null)) {
             System.out.println("删除只有一颗子树的情况");
-            if (parentNode != null) {
-                //子树是左节点的情况
+            //子树是左节点的情况
+            if (delNode.right == null) {
                 if (parentNode != null) {
-                    if (delNode.right == null) {
-                        //待删除的节点为左节点的情况
-                        if (parentNode.value > delNode.value) {
-                            parentNode.left = delNode.left;
-                        } else {
-                            parentNode.right = delNode.left;
-                        }
+                    //待删除的节点为左节点的情况
+                    if (parentNode.value > delNode.value) {
+                        parentNode.left = delNode.left;
+                    } else {
+                        parentNode.right = delNode.left;
                     }
                 } else {
                     //root节点指向左边
                     binarySortTree.root = delNode.left;
                 }
-                //子树是右节点的情况
+            }
+            //子树是右节点的情况
+            if (delNode.left == null) {
                 if (parentNode != null) {
-                    if (delNode.left == null) {
-                        //待删除的节点为左节点的情况
-                        if (parentNode.value > delNode.value) {
-                            parentNode.left = delNode.right;
-                        } else {
-                            parentNode.right = delNode.right;
-                        }
+                    //待删除的节点为左节点的情况
+                    if (parentNode.value > delNode.value) {
+                        parentNode.left = delNode.right;
+                    } else {
+                        parentNode.right = delNode.right;
                     }
                 } else {
                     //root节点指向右边
@@ -174,7 +172,6 @@ public class Node {
 
     //左旋转
     public void leftRevolve() {
-        if (rightHeight() - leftHeight() > 1) {
             //创建一个新的节点
             Node newNode = new Node(value);
             //把新节点的左子树设置为当前节点的左子树
@@ -187,18 +184,21 @@ public class Node {
             right = right.right;
             //把当前节点的左子树设置为新节点
             left = newNode;
-        }
     }
 
     public void rightRevolve() {
-        if (leftHeight() - rightHeight() > 1) {
+            //创建一个新的节点,值为当前节点
             Node newNode = new Node(value);
+            //设置新节点的右子树为当前节点的右子树
             newNode.right = right;
+            //设置新节点的左子树为当前节点的左子树的右子树
             newNode.left = left.right;
+            //设置当前节点的值为左子树节点的值
             value = left.value;
+            //设置当前节点的左子树为原来左子树的左子树
             left = left.left;
+            //设置当前节点的右子树为新节点
             right = newNode;
-        }
     }
 
     public void doubleRevolve() {
@@ -210,8 +210,7 @@ public class Node {
             } else {
                 rightRevolve();
             }
-        }
-        else if (rightHeight() - leftHeight() > 1) {
+        } else if (rightHeight() - leftHeight() > 1) {
             if (right.rightHeight() < right.leftHeight()) {
                 right.rightRevolve();
                 leftRevolve();

@@ -23,23 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e5e26d2-b09e-4cfb-907c-ac0a64fa9155" name="Default Changelist" comment="算法部分完结">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/GreedyAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/KMPAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/ViolenceMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sort/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/ArrBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/BPlusTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/BStarTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/BTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/BinarySortTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/HeroNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/KMPAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonAlgorithm/KMPAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tree/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +68,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.GreedyAlgorithm">
-    <configuration name="Bag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CommonAlgorithm.Bag" />
+  <component name="RunManager" selected="Application.AVLTree">
+    <configuration name="AVLTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tree.AVLTree" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CommonAlgorithm.*" />
+          <option name="PATTERN" value="Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CommonAlgorithm.BinarySearch" />
+    <configuration name="BinarySortTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tree.BinarySortTree" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CommonAlgorithm.*" />
+          <option name="PATTERN" value="Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,26 +134,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GreedyAlgorithm" />
+        <item itemvalue="Application.AVLTree" />
+        <item itemvalue="Application.BinarySortTree" />
         <item itemvalue="Application.KMPAlgorithm" />
+        <item itemvalue="Application.GreedyAlgorithm" />
         <item itemvalue="Application.ViolenceMatch" />
-        <item itemvalue="Application.Bag" />
-        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +174,8 @@
       <workItem from="1613267106202" duration="10042000" />
       <workItem from="1613283855059" duration="3027000" />
       <workItem from="1613304431748" duration="6280000" />
-      <workItem from="1613354222739" duration="27158000" />
+      <workItem from="1613354222739" duration="28839000" />
+      <workItem from="1613446002080" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="算法部分完结">
       <created>1613125958445</created>
@@ -246,38 +231,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613038398553" />
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.0.bottom" timestamp="1613446898022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898022" />
+    <state width="1876" height="303" key="GridCell.Tab.0.center" timestamp="1613446898022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898022" />
+    <state width="1876" height="303" key="GridCell.Tab.0.left" timestamp="1613446898021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898021" />
+    <state width="1876" height="303" key="GridCell.Tab.0.right" timestamp="1613446898022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.1.bottom" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898022" />
+    <state width="1876" height="303" key="GridCell.Tab.1.bottom" timestamp="1613446898238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.1.center" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898238" />
+    <state width="1876" height="303" key="GridCell.Tab.1.center" timestamp="1613446898238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.1.left" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898238" />
+    <state width="1876" height="303" key="GridCell.Tab.1.left" timestamp="1613446898238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
-    <state width="1877" height="303" key="GridCell.Tab.1.right" timestamp="1613391697812">
+    <state width="1876" height="303" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898238" />
+    <state width="1876" height="303" key="GridCell.Tab.1.right" timestamp="1613446898238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="303" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613391697812" />
+    <state width="1876" height="303" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613446898238" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1613125964692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,14 +303,15 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CommonAlgorithm/KMPAlgorithm.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/src/main/java/Tree/Node.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="Tree.Node" memberName="left" />
         <PinnedItemInfo parentTag="Stack.StackCalculator" memberName="symbolStack" />
         <PinnedItemInfo parentTag="LinkedList.HeroNode" memberName="next" />
       </pinned-members>

@@ -10,8 +10,8 @@ public class KMPAlgorithm {
 
     public static void main(String[] args) {
 
-        String str1 = "BBC ABCDAB ABCDABCDABDE";
-        String str2 = "ABCDABD";
+        String str1 = "AAAAB";
+        String str2 = "AAAB";
         System.out.println(kmpSearch(str1, str2));
     }
 
@@ -27,7 +27,7 @@ public class KMPAlgorithm {
         for (int i = 0, j = 0; i < str1.length(); i++) {
 
             // 需要处理str1.charAt(i) != str2.charAt(j),去调整j的大小
-            // KMP算法核心点,可以验证...
+            // KMP算法核心点
             while (j > 0 && str1.charAt(i) != str2.charAt(j)) {
                 //回溯
                 j = next[j - 1];
